@@ -5,17 +5,22 @@
 Getting Started
 
 **Clone the repository:**
-'''git clone https://github.com/LondheShubham153/python-for-devops-masterclass.git
+git clone https://github.com/jayantmule03/System-Resource-Monitoring-Web-Application.git
+1.  **Build the Docker Image**
+    ```
+    docker build -t system-app .
+    ```
+    This command builds a Docker image named `system-app` using the `Dockerfile` in the current directory.
 
- Build the Docker image
- '''
-docker build -t system-app .
-'''
- Run the container in detached mode and map port 5001
- '''
-docker run -d -p 5001:5001 system-app
-'''
- Access the application in your browser
- '''
-http://localhost:5001
-'''
+2.  **Run the Docker Container**
+    ```
+    docker run -d -p 5001:5001 system-app
+    ```
+3.  **Access the Application**
+    ```
+    http://localhost:5001
+    ```
+
+ 
+
+
