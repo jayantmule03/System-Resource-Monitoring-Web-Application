@@ -6,17 +6,22 @@ Getting Started
 
 **Clone the repository:**
 git clone https://github.com/jayantmule03/System-Resource-Monitoring-Web-Application.git
-1.  **Build the Docker Image**
+
+1.  **Change the directory**
+    ```
+     cd System-Resource-Monitoring-Web-Application
+    ```
+2.  **Build the Docker Image**
     ```
     docker build -t system-app .
     ```
     This command builds a Docker image named `system-app` using the `Dockerfile` in the current directory.
 
-2.  **Run the Docker Container**
+3.  **Run the Docker Container**
     ```
     docker run -d -p 5001:5001 system-app
     ```
-3.  **Access the Application**
+4.  **Access the Application**
     ```
     http://localhost:5001
     ```
